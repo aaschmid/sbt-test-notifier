@@ -114,5 +114,5 @@ Contributors
 ------------
 
 * Erik Weikl
-* Andreas Schmid
+* [Andreas Schmid](https://github.com/aaschmid)
 
