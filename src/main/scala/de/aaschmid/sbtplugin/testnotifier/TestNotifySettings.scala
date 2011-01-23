@@ -87,19 +87,19 @@ trait TestNotifySettings {
   }
 
   /** @return the {@link String} to display for the passed tests */
-  def formatPassed(tests: List[TestResult]) =
+  def formatPassed(tests: List[TestResult]): String =
     formatTestResults("passed", tests, false)
 
   /** @return the {@link String} to display for the skipped tests */
-  def formatSkipped(tests: List[TestResult]) =
+  def formatSkipped(tests: List[TestResult]): String =
     formatTestResults("skipped", tests, true)
 
   /** @return the {@link String} to display for the failed tests */
-  def formatFailed(tests: List[TestResult]) =
+  def formatFailed(tests: List[TestResult]): String =
     formatTestResults("failed", tests, true)
 
   /** @return the {@link String} to display for the tests which have thrown an exception */
-  def formatErrors(tests: List[TestResult]) =
+  def formatErrors(tests: List[TestResult]): String =
     formatTestResults("errors", tests, true)
 
   /**
@@ -108,7 +108,7 @@ trait TestNotifySettings {
    * category. Thereby each test class becomes a new line indented by a single tab.
    * @return the formatted results
    */
-  def formatTestResults(prefix: String, tests: List[TestResult], showTestClasses: Boolean) = {
+  def formatTestResults(prefix: String, tests: List[TestResult], showTestClasses: Boolean): String = {
     prefix + ": " + tests.length + (showTestClasses match {
       case true => (if (tests.length > 0) tests mkString ("\n\t", "\n\t", "") else "")
       case _ => ""
