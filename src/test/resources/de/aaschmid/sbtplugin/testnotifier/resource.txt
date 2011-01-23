@@ -1,0 +1,1 @@
+This is just a test resource file which is copied to check copying functionality.
