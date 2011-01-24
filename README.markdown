@@ -118,6 +118,6 @@ you can set `def printNotification: Boolean` to `false`.
 Contributors
 ------------
 
-* Erik Weikl
+* [Eric Weikl](https://github.com/ericweikl)
 * [Andreas Schmid](https://github.com/aaschmid)
 
