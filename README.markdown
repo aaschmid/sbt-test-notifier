@@ -17,16 +17,16 @@ for Ubuntu with Gnome)
 Usage
 -----
 
-**ATTENTION:** This will not work currently but I am working on it. Instead you have to 
-download the source and build it buy your own. You can use `publish-local` to publish it 
-to your local repository and use it afterwards. ;)
+**ATTENTION:** This will just work if you download the source, build it by your own and
+use `publish-local` to publish it to your local repository. ;)
+But I am working on it.
 
 
 To use this plugin you have change `<your project directory>/project/plugins/Plugins.scala`:
 
     import sbt._
     class Plugins(info: ProjectInfo) extends PluginDefinition(info) {
-      lazy val sbtIdeaRepository = "sbt-test-notifier-repo" at "???"
+    //  lazy val sbtTestNotifierRepository = "sbt-test-notifier-repo" at "???"
       lazy val sbtIdea = "de.aaschmid.sbtplugin" % "sbt-test-notifier" % "0.1"
 
       // ...
