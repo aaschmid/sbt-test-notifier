@@ -38,7 +38,7 @@ trait TestNotifySettings {
 
     val targetDir = imageTargetDir
     if (!targetDir.exists) targetDir.mkdirs()
-    println(targetDir)
+
     val targetFile = new File(targetDir.getAbsolutePath + File.separator + (new File(resourcePath)).getName)
     if (!targetFile.exists) {
       targetFile.createNewFile()

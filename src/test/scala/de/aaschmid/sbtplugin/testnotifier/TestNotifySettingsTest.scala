@@ -10,7 +10,6 @@ object TestNotifySettingsTest extends Specification with DataTables with TestNot
 
   "Test resource should copied correctly" in {
     val target = getOrCreateFile("/de/aaschmid/sbtplugin/testnotifier/resource.txt")
-    println(target)
     target must exist
     target.delete() must beTrue
   }
